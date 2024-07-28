@@ -113,7 +113,7 @@ def video_info(video_url):
 
     # Directory to save the JSON file
     output_directory = 'video_info'
-    os.makedirs(output_directory, exist_ok=True)
+    # os.makedirs(output_directory, exist_ok=True)
 
     # Major video resolutions we are interested in
     major_resolutions = ["240p", "360p", "480p", "720p", "1080p", "2160p"]
