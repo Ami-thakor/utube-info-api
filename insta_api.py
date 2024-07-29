@@ -1,4 +1,4 @@
-import instaloader
+import instaloader, os
 from instaloader import Post
 
 # Get instance
@@ -6,8 +6,13 @@ L = instaloader.Instaloader()
 
 # channie12@dependity.com
 # vishalxverna
-UserName = "vishalxverna"
-PassWord = "Vishal@143"
+# UserName = "vishalxverna"
+UserName = os.environ.get('username',
+                           'user')
+PassWord = os.environ.get('password',
+                           'pass')
+
+# PassWord = "Vishal@143"
 
 L.login(user=UserName, passwd=PassWord)
 # L.save_session_to_file("mysession.session")
