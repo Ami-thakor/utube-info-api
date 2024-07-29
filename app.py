@@ -11,13 +11,13 @@ def hello_world():
 
 
 @app.route("/yt", methods=["GET"])
-def get_video_data():
+def get_yt_data():
     video_url = request.args.get("url")
     data = video_info(video_url)
     return jsonify(data)
     
 @app.route("/ig", methods=["GET"])
-def get_video_data():
+def get_ig_data():
     video_url = request.args.get("url")
     data = get_video_info(video_url)
     return jsonify(data)
