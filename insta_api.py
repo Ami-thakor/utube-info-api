@@ -14,7 +14,7 @@ PassWord = os.environ.get('password',
 
 # PassWord = "Vishal@143"
 
-L.login(user=UserName, passwd=PassWord)
+# L.login(user=UserName, passwd=PassWord)
 # L.save_session_to_file("mysession.session")
 # L.load_session_from_file(username, "mysession.session")
 
