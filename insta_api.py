@@ -17,7 +17,7 @@ PassWord = os.environ.get('password',
 # L.login(user=UserName, passwd=PassWord)
 # L.save_session_to_file("mysession.session")
 # L.load_session_from_file(username, "mysession.session")
-
+L.load_session_from_file("vishalxverna", "mysession.session")
 
 def get_video_info(link: str):
     ShortCode = link.split("/")[4]
