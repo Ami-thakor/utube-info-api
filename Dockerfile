@@ -19,4 +19,4 @@ RUN pip install -r requirements.txt
 EXPOSE 5000
 
 # Run the Flask app (you can change `app.py` to whatever your entry file is)
-CMD ["python", "app.py"]
+CMD ["python", "index.py"]
